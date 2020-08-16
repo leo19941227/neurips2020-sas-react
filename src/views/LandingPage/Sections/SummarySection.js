@@ -18,7 +18,7 @@ export default function SummarySection() {
     <div className={classes.section}>
       <GridContainer justify="center">
         <GridItem xs={12} sm={12} md={8}>
-          <h2 className={classes.title}>Summary</h2>
+          <h2 className={classes.title}>Workshop Description</h2>
           <h5 className={classes.description}>
           There is a trend in the machine learning community to adopt self-supervised approaches to pre-train deep networks. Self-supervised learning utilizes proxy supervised learning tasks, for example, distinguishing parts of the input signal from distractors, or generating masked input segments conditioned on the unmasked ones, to obtain training data from unlabeled corpora. These approaches make it possible to use a tremendous amount of unlabeled data available on the web to train large networks and solve complicated tasks. <strong>ELMo</strong>, <strong>BERT</strong>, and <strong>GPT</strong> in NLP are famous examples in this direction. Recently self-supervised approaches for speech and audio processing are also gaining attention. These approaches combine methods for utilizing no or partial labels, unpaired text and audio data, contextual text and video supervision, and signals from user interactions. Although the research direction of self-supervised learning is active in speech and audio processing, existing works are limited to several problems such as automatic speech recognition, speaker identification, and speech translation, partially due to the diversity of modeling in various speech and audio processing problems. There is still much unexplored territory in the research direction for self-supervised learning.
           </h5>
