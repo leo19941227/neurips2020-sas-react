@@ -32,6 +32,7 @@ export default function LandingPage(props) {
   const { ...rest } = props;
   return (
     <div>
+      <span id="top"></span>
       <Header
         color="transparent"
         routes={dashboardRoutes}
@@ -79,7 +80,7 @@ export default function LandingPage(props) {
           <p style={{height: 30}}></p>
         </div>
       </div>
-      <Footer />
+      <p style={{height: 50}}></p>
     </div>
   );
 }
