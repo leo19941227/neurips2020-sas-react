@@ -1,6 +1,6 @@
 import { title } from "assets/jss/material-kit-react.js";
 
-const productStyle = {
+const informationStyle = {
   section: {
     padding: "10px 0",
     textAlign: "center"
@@ -26,4 +26,4 @@ const productStyle = {
   },
 };
 
-export default productStyle;
+export default informationStyle;

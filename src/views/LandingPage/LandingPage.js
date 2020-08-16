@@ -21,6 +21,7 @@ import styles from "assets/jss/material-kit-react/views/landingPage.js";
 import SummarySection from "./Sections/SummarySection.js";
 import TeamSection from "./Sections/TeamSection.js";
 import Schedule from "./Sections/Schedule.js";
+import Information from "./Sections/Information.js"
 
 const dashboardRoutes = [];
 
@@ -68,6 +69,10 @@ export default function LandingPage(props) {
           <SummarySection />
           <TeamSection />
           <Schedule />
+          <Information title="Diversity commitment" descriptions={["The team of organizers and invited speakers consists of academic and industrial researchers with various levels of seniority, from young scientists to senior researchers with abundant experience in organizing technical events in top-tier conferences. The team is diverse in gender and race. We aim to provide a platform for researchers with different backgrounds to share experiences, opinions, and innovation about self-supervised learning. The diversity allows the workshop to provide comprehensive coverage in speech and audio problems and research directions, and motivate the mix of scientists."]} />
+          <Information title="Access" descriptions={["We will build a website for publicity once the proposal is accepted. On the website, we will provide information including the call for contributions, titles and speaker biographies for invited talks, workshop schedule, technical advisory committee and reviewers, and accepted submissions for contributed talks and posters. We will record all the talks and panel, and publish the recording along with accepted submissions on the website. We will also encourage contributors to upload their accepted submissions to arXiv for broader access."]} />
+          <Information title="Previous related workshops" descriptions={["The team organized a special session about self-supervised learning for speech processing at INTERSPEECH early this year, and some of the team members are also involved in another successful workshop on a similar topic in ICML 2020 (https://icml-sas.gitlab.io/). Due to the significant amount of positive feedback and the active participation from the speech and audio processing field, we decided to host a similar event at NeurIPS to attract an audience with diverse machine learning background, in hopes of inspiring more innovation in self-supervision for the speech and audio processing field and allow the field to contribute to the general machine learning community. In this NeurIPS workshop, we invite a brand new group of speakers to cover not only the speech and audio processing field, but also natural language understanding, robotics, and computer vision. We aim to have a platform for researchers from different areas to exchange viewpoints, challenge each other, and spark new ideas. To avoid submission of published works, we will explicitly discourage contributors to do so in the call for submissions. Works with a concrete contribution to the advancement of this research direction will be a requirement in our review process. We will also work with invited speakers to make sure their talks cover a review of approaches and original, unpublished innovation."]} />
+          <p style={{height: 30}}></p>
         </div>
       </div>
       <Footer />

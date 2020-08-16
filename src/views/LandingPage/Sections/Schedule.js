@@ -80,6 +80,7 @@ export default function Information(props) {
       </GridContainer>
       <p style={{height: 30}}></p>
       <CustomizedTables />
+      <p style={{height: 30}}></p>
     </div>
   );
 }
