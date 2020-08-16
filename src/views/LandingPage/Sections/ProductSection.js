@@ -11,6 +11,11 @@ import GridContainer from "components/Grid/GridContainer.js";
 import GridItem from "components/Grid/GridItem.js";
 import InfoArea from "components/InfoArea/InfoArea.js";
 
+import List from '@material-ui/core/List';
+import ListItem from '@material-ui/core/ListItem';
+import ListItemText from '@material-ui/core/ListItemText';
+import { Paper } from '@material-ui/core';
+
 import styles from "assets/jss/material-kit-react/views/landingPageSections/productStyle.js";
 
 const useStyles = makeStyles(styles);
@@ -21,47 +26,19 @@ export default function ProductSection() {
     <div className={classes.section}>
       <GridContainer justify="center">
         <GridItem xs={12} sm={12} md={8}>
-          <h2 className={classes.title}>Let{"'"}s talk product</h2>
+          <h2 className={classes.title}>Summary</h2>
           <h5 className={classes.description}>
-            This is the paragraph where you can write more details about your
-            product. Keep you user engaged by providing meaningful information.
-            Remember that by this time, the user is curious, otherwise he wouldn
-            {"'"}t scroll to get here. Add a button if you want the user to see
-            more.
+          There is a trend in the machine learning community to adopt self-supervised approaches to pre-train deep networks. Self-supervised learning utilizes proxy supervised learning tasks, for example, distinguishing parts of the input signal from distractors, or generating masked input segments conditioned on the unmasked ones, to obtain training data from unlabeled corpora. These approaches make it possible to use a tremendous amount of unlabeled data available on the web to train large networks and solve complicated tasks. <strong>ELMo</strong>, <strong>BERT</strong>, and <strong>GPT</strong> in NLP are famous examples in this direction. Recently self-supervised approaches for speech and audio processing are also gaining attention. These approaches combine methods for utilizing no or partial labels, unpaired text and audio data, contextual text and video supervision, and signals from user interactions. Although the research direction of self-supervised learning is active in speech and audio processing, existing works are limited to several problems such as automatic speech recognition, speaker identification, and speech translation, partially due to the diversity of modeling in various speech and audio processing problems. There is still much unexplored territory in the research direction for self-supervised learning.
           </h5>
+          <h5 className={classes.description}>
+          This workshop will bring concentrated discussions on self-supervision for the field of speech and audio processing via several invited talks, oral and poster sessions with high-quality papers, and a panel of leading researchers from industry and academia. Alongside research work on new self-supervised methods, data, applications, and results, this workshop will call for novel work on understanding, analyzing, and comparing different self-supervision approaches for speech and audio processing. The workshop aims to:
+          </h5>
+          <Paper className={classes.paper} elevation={3} children={(<span><strong>Review</strong> existing and inspire new self-supervised methods and results.</span>)} />
+          <Paper className={classes.paper} elevation={3} children={(<span><strong>Motivate</strong> the application of self-supervision approaches to more speech and audio processing problems.</span>)} />
+          <Paper className={classes.paper} elevation={3} children={(<span><strong>Motivate</strong> works on studying methods for understanding learned representations, comparing different self-supervision methods and comparing self-supervision to other self-training as well as transfer learning methods that have been long utilized for low-resource speech and audio processing.</span>)} />
+          <Paper className={classes.paper} elevation={3} children={(<span><strong>Encourage</strong> communication within the field of speech and audio processing as well as between the field and the whole machine learning community for sharing knowledge, ideas, and data, and encourage future collaboration to inspire innovation in the field and the whole community.</span>)} />
         </GridItem>
       </GridContainer>
-      <div>
-        <GridContainer>
-          <GridItem xs={12} sm={12} md={4}>
-            <InfoArea
-              title="Free Chat"
-              description="Divide details about your product or agency work into parts. Write a few lines about each one. A paragraph describing a feature will be enough."
-              icon={Chat}
-              iconColor="info"
-              vertical
-            />
-          </GridItem>
-          <GridItem xs={12} sm={12} md={4}>
-            <InfoArea
-              title="Verified Users"
-              description="Divide details about your product or agency work into parts. Write a few lines about each one. A paragraph describing a feature will be enough."
-              icon={VerifiedUser}
-              iconColor="success"
-              vertical
-            />
-          </GridItem>
-          <GridItem xs={12} sm={12} md={4}>
-            <InfoArea
-              title="Fingerprint"
-              description="Divide details about your product or agency work into parts. Write a few lines about each one. A paragraph describing a feature will be enough."
-              icon={Fingerprint}
-              iconColor="danger"
-              vertical
-            />
-          </GridItem>
-        </GridContainer>
-      </div>
     </div>
   );
 }

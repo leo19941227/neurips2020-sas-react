@@ -2,19 +2,28 @@ import { title } from "assets/jss/material-kit-react.js";
 
 const productStyle = {
   section: {
-    padding: "70px 0",
+    padding: "30px 0",
     textAlign: "center"
   },
   title: {
     ...title,
+    fontSize: "1.5em",
     marginBottom: "1rem",
     marginTop: "30px",
     minHeight: "32px",
-    textDecoration: "none"
+    textDecoration: "none",
   },
   description: {
-    color: "#999"
-  }
+    color: "#999",
+    margin: "20px 0",
+    textAlign: "left",
+  },
+  paper: {
+    marginTop: "20px",
+    marginBottom: "10px",
+    padding: "10px",
+    textAlign: "left",
+  },
 };
 
 export default productStyle;
