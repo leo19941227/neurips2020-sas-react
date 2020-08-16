@@ -8,7 +8,7 @@ import GridItem from "components/Grid/GridItem.js";
 import {Paper} from "@material-ui/core";
 import NameCard from "components/Card/NameCard";
 
-import styles from "assets/jss/material-kit-react/views/landingPageSections/ScheduleStyle.js";
+import styles from "assets/jss/material-kit-react/views/landingPageSections/scheduleStyle.js";
 
 const useStyles = makeStyles(styles);
 
