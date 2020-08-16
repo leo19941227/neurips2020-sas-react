@@ -3,7 +3,6 @@ import React from "react";
 import DeleteIcon from "@material-ui/icons/Delete";
 import IconButton from "@material-ui/core/IconButton";
 // react components for routing our app without refresh
-import { Link } from "react-router-dom";
 
 // @material-ui/core components
 import { makeStyles } from "@material-ui/core/styles";
@@ -17,6 +16,7 @@ import { Apps, CloudDownload } from "@material-ui/icons";
 // core components
 import CustomDropdown from "components/CustomDropdown/CustomDropdown.js";
 import Button from "components/CustomButtons/Button.js";
+import { HashLink as Link } from 'react-router-hash-link';
 
 import styles from "assets/jss/material-kit-react/components/headerLinksStyle.js";
 
@@ -27,44 +27,46 @@ export default function HeaderLinks(props) {
   return (
     <List className={classes.list}>
       <ListItem className={classes.listItem}>
-        <CustomDropdown
-          noLiPadding
-          buttonText="Components"
-          buttonProps={{
-            className: classes.navLink,
-            color: "transparent"
-          }}
-          buttonIcon={Apps}
-          dropdownList={[
-            <Link to="/" className={classes.dropdownLink}>
-              All components
-            </Link>,
-            <a
-              href="https://creativetimofficial.github.io/material-kit-react/#/documentation?ref=mkr-navbar"
-              target="_blank"
-              className={classes.dropdownLink}
-            >
-              Documentation
-            </a>
-          ]}
-        />
-      </ListItem>
-      <ListItem className={classes.listItem}>
+        <Link to="/#description" style={{color: "inherit"}}>
         <Button
-          href="https://www.creative-tim.com/product/material-kit-react?ref=mkr-navbar"
           color="transparent"
-          target="_blank"
           className={classes.navLink}
         >
-          <CloudDownload className={classes.icons} /> Download
+        Description
         </Button>
+        </Link>
       </ListItem>
       <ListItem className={classes.listItem}>
-        {/*<Tooltip title="Delete">
-          <IconButton aria-label="Delete">
-            <DeleteIcon />
-          </IconButton>
-        </Tooltip>*/}
+        <Link to="/#organizers" style={{color: "inherit"}}>
+        <Button
+          color="transparent"
+          className={classes.navLink}
+        >
+        Organizers
+        </Button>
+        </Link>
+      </ListItem>
+      <ListItem className={classes.listItem}>
+        <Link to="/#schedule" style={{color: "inherit"}}>
+        <Button
+          color="transparent"
+          className={classes.navLink}
+        >
+        Schedule
+        </Button>
+        </Link>
+      </ListItem>
+      <ListItem className={classes.listItem}>
+        <Link to="/#miscs" style={{color: "inherit"}}>
+        <Button
+          color="transparent"
+          className={classes.navLink}
+        >
+        Miscs
+        </Button>
+        </Link>
+      </ListItem>
+      <ListItem className={classes.listItem}>
         <Tooltip
           id="instagram-twitter"
           title="Follow us on twitter"
