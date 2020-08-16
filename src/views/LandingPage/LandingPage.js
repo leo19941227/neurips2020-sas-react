@@ -34,7 +34,7 @@ export default function LandingPage(props) {
       <Header
         color="transparent"
         routes={dashboardRoutes}
-        brand="Material Kit React"
+        brand="NeurIPS SAS"
         rightLinks={<HeaderLinks />}
         fixed
         changeColorOnScroll={{
@@ -43,27 +43,21 @@ export default function LandingPage(props) {
         }}
         {...rest}
       />
-      <Parallax filter image={require("assets/img/landing-bg.jpg")}>
-        <div className={classes.container}>
+      <Parallax filter image={"https://images.prismic.io/vancouverconvention/109ef82b-1f8e-4b56-99cb-58e729c34264_1826987.jpg?auto=compress,format&rect=0,196,1500,804&w=1400&h=750"}>
+        <div style={{paddingBottom: "30px"}} className={classes.container}>
           <GridContainer>
-            <GridItem xs={12} sm={12} md={6}>
-              <h1 className={classes.title}>Your Story Starts With Us.</h1>
-              <h4>
-                Every landing page needs a small description after the big bold
-                title, that{"'"}s why we added this text here. Add here all the
-                information that can make you or your product create the first
-                impression.
-              </h4>
+            <GridItem xs={12} sm={12} md={12}>
+              <h2 className={classes.subtitle}>NeurIPS 2020 workshop</h2>
+              <h1 className={classes.title}>Self-Supervised Learning for Speech and Audio Processing</h1>
               <br />
               <Button
                 color="danger"
                 size="lg"
-                href="https://www.youtube.com/watch?v=dQw4w9WgXcQ&ref=creativetim"
+                href="https://openreview.net/group?id=ICML.cc/2020/Workshop/SAS"
                 target="_blank"
                 rel="noopener noreferrer"
               >
-                <i className="fas fa-play" />
-                Watch video
+                Submit papers
               </Button>
             </GridItem>
           </GridContainer>
