@@ -19,8 +19,8 @@ const productStyle = {
     textAlign: "left",
   },
   paper: {
-    marginTop: "20px",
-    marginBottom: "10px",
+    marginTop: "30px",
+    marginBottom: "30px",
     padding: "10px",
     textAlign: "left",
   },
