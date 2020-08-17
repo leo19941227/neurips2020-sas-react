@@ -3,7 +3,7 @@ import { makeStyles } from '@material-ui/core/styles';
 import Modal from '@material-ui/core/Modal';
 import Backdrop from '@material-ui/core/Backdrop';
 import Fade from '@material-ui/core/Fade';
-import { Link } from '@material-ui/core'
+import { Link, Paper } from '@material-ui/core'
 
 const useStyles = makeStyles((theme) => ({
   modal: {
@@ -20,7 +20,7 @@ const useStyles = makeStyles((theme) => ({
 }));
 
 export default function TransitionsModal(props) {
-  const { text } = props
+  const { text, description } = props
   const classes = useStyles();
   const [open, setOpen] = React.useState(false);
 
@@ -50,10 +50,9 @@ export default function TransitionsModal(props) {
         }}
       >
         <Fade in={open}>
-          <div className={classes.paper}>
-            <h2 id="transition-modal-title">Transition modal</h2>
-            <p id="transition-modal-description">react-transition-group animates me.</p>
-          </div>
+          <Paper style={{maxWidth: 500, padding: 20}}>
+            <p>{description}</p>
+          </Paper>
         </Fade>
       </Modal>
     </div>

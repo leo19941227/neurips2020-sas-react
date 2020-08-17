@@ -25,7 +25,7 @@ const teamStyle = {
   },
   description: {
     color: "#999",
-    maxHeight: "10em",
+    maxHeight: "7em",
     overflow: "hidden",
     paddingBottom: "20px"
   },

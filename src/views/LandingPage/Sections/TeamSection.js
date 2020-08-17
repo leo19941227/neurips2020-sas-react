@@ -36,7 +36,7 @@ function Person(props) {
         <p className={classes.description}>
           {description}
         </p>
-        <TransitionsModal text="... read more" />
+        <TransitionsModal text="... read more" description={description} />
       </CardBody>
       <CardFooter className={classes.justifyCenter}>
         <Button
