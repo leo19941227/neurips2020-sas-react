@@ -37,6 +37,26 @@ export default function HeaderLinks(props) {
         </Link>
       </ListItem>
       <ListItem className={classes.listItem}>
+        <Link to="/#call" style={{color: "inherit"}}>
+        <Button
+          color="transparent"
+          className={classes.navLink}
+        >
+        Call for Papers
+        </Button>
+        </Link>
+      </ListItem>
+      <ListItem className={classes.listItem}>
+        <Link to="/#deadlines" style={{color: "inherit"}}>
+        <Button
+          color="transparent"
+          className={classes.navLink}
+        >
+        Deadlines
+        </Button>
+        </Link>
+      </ListItem>
+      <ListItem className={classes.listItem}>
         <Link to="/#organizers" style={{color: "inherit"}}>
         <Button
           color="transparent"
@@ -47,26 +67,16 @@ export default function HeaderLinks(props) {
         </Link>
       </ListItem>
       <ListItem className={classes.listItem}>
-        <Link to="/#schedule" style={{color: "inherit"}}>
+        <Link to="/#contact" style={{color: "inherit"}}>
         <Button
           color="transparent"
           className={classes.navLink}
         >
-        Schedule
+        Contact
         </Button>
         </Link>
       </ListItem>
-      <ListItem className={classes.listItem}>
-        <Link to="/#miscs" style={{color: "inherit"}}>
-        <Button
-          color="transparent"
-          className={classes.navLink}
-        >
-        Miscs
-        </Button>
-        </Link>
-      </ListItem>
-      <ListItem className={classes.listItem}>
+      {/* <ListItem>
         <Tooltip
           id="instagram-twitter"
           title="Follow us on twitter"
@@ -116,7 +126,7 @@ export default function HeaderLinks(props) {
             <i className={classes.socialIcons + " fab fa-instagram"} />
           </Button>
         </Tooltip>
-      </ListItem>
+      </ListItem> */}
     </List>
   );
 }

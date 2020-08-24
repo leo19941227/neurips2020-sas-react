@@ -56,8 +56,7 @@ export default function LandingPage(props) {
               <Button
                 color="danger"
                 size="lg"
-                href="https://openreview.net/group?id=ICML.cc/2020/Workshop/SAS"
-                target="_blank"
+                onClick={() => { alert("We are currently preparing the submission system. Please wait for a few days and thank you for your patience!") }}
                 rel="noopener noreferrer"
               >
                 Submit papers
