@@ -55,7 +55,7 @@ export default function TeamSection() {
       "Abdelrahman Mohamed",
       "Facebook",
       <span><strong>Abdelrahman Mohamed</strong> is a research scientist at Facebook AI research (FAIR) in Seattle. Before FAIR, he was a principal scientist/manager in Amazon Alexa AI team. From 2014 to 2017, he was in Microsoft Research Redmond. He received his PhD from the University of Toronto with Geoffrey Hinton and Gerald Penn where he was part of the team that started the Deep Learning revolution in Spoken Language Processing in 2009. He is the recipient of the IEEE Signal Processing Society Best Journal Paper Award for 2016. His research interests span Deep Learning, Spoken Language Processing, and Natural Language Understanding. He is a special session co-organizer about "New Trends in self-supervised speech processing" at Interspeech (2020).</span>
-      ,"http://www.cs.toronto.edu/~asamir/Abdelrahman_Mohamed.jpg"
+      ,"https://www.cs.toronto.edu/~asamir/Abdelrahman_Mohamed.jpg"
       ,"https://research.fb.com/people/mohamed-abdelrahman/"
     ],
     [
