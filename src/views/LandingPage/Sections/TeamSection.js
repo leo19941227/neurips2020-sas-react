@@ -113,7 +113,7 @@ export default function TeamSection() {
   ]
   return (
     <div className={classes.section}>
-      <h2 className={classes.title}>Organizers and Biographies</h2>
+      <h2 className={classes.title}>Organizers</h2>
       <div>
         <GridContainer>
           {infos.map(info => <Person classes={classes} imageClasses={imageClasses} name={info[0]} title={info[1]} description={info[2]} imgurl={info[3]} />)}

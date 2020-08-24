@@ -15,14 +15,7 @@ const informationStyle = {
   },
   description: {
     color: "#999",
-    margin: "20px 0",
-    textAlign: "left",
-  },
-  paper: {
-    marginTop: "30px",
-    marginBottom: "30px",
-    padding: "10px",
-    textAlign: "left",
+    margin: "30px 0",
   },
 };
 
