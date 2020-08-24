@@ -37,7 +37,7 @@ export default function LandingPage(props) {
       <Header
         color="transparent"
         routes={dashboardRoutes}
-        brand="NeurIPS SAS"
+        brand="NeurIPS SSL for Speech & Audio"
         rightLinks={<HeaderLinks />}
         fixed
         changeColorOnScroll={{
@@ -73,6 +73,7 @@ export default function LandingPage(props) {
           <span style={{display: "block", height: 50}} id="call"></span>
           <CallSection />
           <Information title="Submission Guidelines" descriptions={[<span style={{textAlign: "center"}}>To be decided</span>]} />
+          <span style={{display: "block", height: 50}} id="deadlines"></span>
           <Information title="Important Dates" descriptions={[<ul style={{textAlign: "left"}}>
               <li style={{margin: "20px 0"}}><span style={{fontWeight: "bold", color: "red"}}>Oct 02, 2020</span>: Paper submission deadline</li>
               <li style={{margin: "20px 0"}}><span style={{fontWeight: "bold", color: "red"}}>Oct 23, 2020</span>: Notification of Acceptance/Rejection</li>
@@ -84,6 +85,7 @@ export default function LandingPage(props) {
           <TeamSection />
           <Information title="Program Committee" descriptions={[<span style={{textAlign: "center"}}>To be decided</span>]} />
           <Information title="Accepted Papers" descriptions={[<span style={{textAlign: "center"}}>To be decided</span>]} />
+          <span style={{display: "block", height: 50}} id="contact"></span>
           <Information title="Contact" descriptions={[<span style={{textAlign: "center"}}>neurips.sas.2020@gmail.com</span>]} />
           <p style={{height: 30}}></p>
         </div>
