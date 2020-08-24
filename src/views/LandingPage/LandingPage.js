@@ -73,11 +73,14 @@ export default function LandingPage(props) {
           <CallSection />
           <Information title="Submission Guidelines" descriptions={[<span style={{textAlign: "center"}}>To be decided</span>]} />
           <span style={{display: "block", height: 50}} id="deadlines"></span>
-          <Information title="Important Dates" descriptions={[<ul style={{textAlign: "left"}}>
-              <li style={{margin: "20px 0"}}><span style={{fontWeight: "bold", color: "red"}}>Oct 02, 2020</span>: Paper submission deadline</li>
-              <li style={{margin: "20px 0"}}><span style={{fontWeight: "bold", color: "red"}}>Oct 23, 2020</span>: Notification of Acceptance/Rejection</li>
-              <li style={{margin: "20px 0"}}><span style={{fontWeight: "bold", color: "red"}}>Nov 14, 2020</span>: Talk Recording Deadline</li>
-            </ul>]} />
+          <Information title="Important Dates" descriptions={[<div style={{textAlign: "center"}}>
+              <div style={{fontWeight: "bold", color: "red", margin: "30px 0 5px 0"}}>Oct 02, 2020</div>
+              <block style={{margin: "5px 0 30px 0"}}>Paper submission deadline</block>
+              <div style={{fontWeight: "bold", color: "red", margin: "30px 0 5px 0"}}>Oct 23, 2020</div>
+              <block style={{margin: "5px 0 30px 0"}}>Notification of Acceptance/Rejection</block>
+              <div style={{fontWeight: "bold", color: "red", margin: "30px 0 5px 0"}}>Nov 14, 2020</div>
+              <block style={{margin: "5px 0 30px 0"}}>Talk Recording Deadline</block>
+            </div>]} />
           <Information title="Invited Speakers" descriptions={[<span style={{textAlign: "center"}}>To be decided</span>]} />
           <Information title="Schedule" descriptions={[<span style={{textAlign: "center"}}>To be decided</span>]} />
           <span style={{display: "block", height: 50}} id="organizers"></span>
@@ -86,7 +89,7 @@ export default function LandingPage(props) {
           <Information title="Accepted Papers" descriptions={[<span style={{textAlign: "center"}}>To be decided</span>]} />
           <span style={{display: "block", height: 50}} id="contact"></span>
           <Information title="Contact" descriptions={[<span style={{textAlign: "center"}}>neurips.sas.2020@gmail.com</span>]} />
-          <p style={{height: 30}}></p>
+          <p style={{height: 50}}></p>
         </div>
       </div>
       <p style={{height: 50}}></p>
