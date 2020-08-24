@@ -20,7 +20,7 @@ const useStyles = makeStyles((theme) => ({
 }));
 
 export default function TransitionsModal(props) {
-  const { text, description } = props
+  const { page, description } = props
   const classes = useStyles();
   const [open, setOpen] = React.useState(false);
 
@@ -35,8 +35,10 @@ export default function TransitionsModal(props) {
   return (
     <div>
       <Link onClick={handleOpen}>
-        {text}
+        ... read more
       </Link>
+      <span> or </span>
+      <a href={page} target="_blank">visit page</a>
       <Modal
         aria-labelledby="transition-modal-title"
         aria-describedby="transition-modal-description"
