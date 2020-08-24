@@ -37,7 +37,7 @@ export default function LandingPage(props) {
       <Header
         color="transparent"
         routes={dashboardRoutes}
-        brand="NeurIPS 2020 SAS"
+        brand="NeurIPS SAS 2020"
         rightLinks={<HeaderLinks />}
         fixed
         changeColorOnScroll={{
