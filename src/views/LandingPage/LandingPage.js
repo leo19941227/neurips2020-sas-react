@@ -46,7 +46,7 @@ export default function LandingPage(props) {
         }}
         {...rest}
       />
-      <Parallax filter image={"https://images.prismic.io/vancouverconvention/109ef82b-1f8e-4b56-99cb-58e729c34264_1826987.jpg?auto=compress,format&rect=0,196,1500,804&w=1400&h=750"}>
+      <Parallax filter image={require("assets/img/location.jpg")}>
         <div style={{paddingBottom: "30px"}} className={classes.container}>
           <GridContainer>
             <GridItem xs={12} sm={12} md={12}>
