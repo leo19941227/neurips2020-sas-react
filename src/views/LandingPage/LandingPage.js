@@ -19,6 +19,7 @@ import styles from "assets/jss/material-kit-react/views/landingPage.js";
 
 // Sections for this page
 import SummarySection from "./Sections/SummarySection.js";
+import CallSection from "./Sections/CallSection.js";
 import TeamSection from "./Sections/TeamSection.js";
 import Schedule from "./Sections/Schedule.js";
 import Information from "./Sections/Information.js"
@@ -69,6 +70,8 @@ export default function LandingPage(props) {
         <div className={classes.container}>
           <span style={{display: "block", height: 50}} id="description"></span>
           <SummarySection />
+          <span style={{display: "block", height: 50}} id="call"></span>
+          <CallSection />
           <Information title="Submission Guidelines" descriptions={[<span style={{textAlign: "center"}}>To be decided</span>]} />
           <Information title="Important Dates" descriptions={[<ul style={{textAlign: "left"}}>
               <li style={{margin: "20px 0"}}><span style={{fontWeight: "bold", color: "red"}}>Oct 02, 2020</span>: Paper submission deadline</li>
