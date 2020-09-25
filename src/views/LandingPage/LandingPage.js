@@ -75,7 +75,9 @@ export default function LandingPage(props) {
           <span style={{display: "block", height: 50}} id="deadlines"></span>
           <Information title="Important Dates" descriptions={[<div style={{textAlign: "center"}}>
               <div style={{fontWeight: "bold", color: "red", margin: "30px 0 5px 0"}}>Oct 02, 2020</div>
-              <block style={{margin: "5px 0 30px 0"}}>Paper submission deadline</block>
+              <block style={{margin: "5px 0 30px 0"}}><strong>Title</strong> submission deadline</block>
+              <div style={{fontWeight: "bold", color: "red", margin: "30px 0 5px 0"}}>Oct 12, 2020</div>
+              <block style={{margin: "5px 0 30px 0"}}><strong>Paper</strong> submission deadline</block>
               <div style={{fontWeight: "bold", color: "red", margin: "30px 0 5px 0"}}>Oct 23, 2020</div>
               <block style={{margin: "5px 0 30px 0"}}>Notification of Acceptance/Rejection</block>
               <div style={{fontWeight: "bold", color: "red", margin: "30px 0 5px 0"}}>Nov 14, 2020</div>
