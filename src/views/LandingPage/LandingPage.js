@@ -56,7 +56,8 @@ export default function LandingPage(props) {
               <Button
                 color="danger"
                 size="lg"
-                onClick={() => { alert("We are currently preparing the submission system. Please wait for a few days and thank you for your patience!") }}
+                href="https://cmt3.research.microsoft.com/SAS2020/Submission/index"
+                target="_blank"
                 rel="noopener noreferrer"
               >
                 Submit papers
