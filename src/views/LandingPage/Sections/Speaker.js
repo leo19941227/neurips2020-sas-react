@@ -65,8 +65,8 @@ export default function Speaker(props) {
           <GridContainer>
             {
               infos.map(info =>
-              <GridItem xs={12} sm={12} md={4}>
-                <div style={{padding: 10}}>
+              <GridItem xs={12} sm={12} md={12} lg={6}>
+                <div style={{padding: 10, maxWidth: 400, margin: "auto"}}>
                 <NameCard name={info[0]} org={info[1]} imgurl={info[2]} />
                 </div>
               </GridItem>

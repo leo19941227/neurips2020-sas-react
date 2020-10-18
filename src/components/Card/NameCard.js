@@ -44,10 +44,10 @@ export default function NameCard(props) {
     <Card className={classes.root} style={{height: 130}}>
       <div className={classes.details} style={{width: 260}}>
         <CardContent className={classes.content}>
-          <h4 style={{fontSize: 15}}>
+          <h4 style={{fontSize: 18}}>
             {name}
           </h4>
-          <p style={{fontSize: "12px"}}>{org}</p>
+          <p style={{fontSize: 13}}><strong>{org}</strong></p>
         </CardContent>
       </div>
       <CardMedia
