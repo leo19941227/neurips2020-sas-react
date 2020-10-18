@@ -12,7 +12,7 @@ import styles from "assets/jss/material-kit-react/views/landingPageSections/sche
 
 const useStyles = makeStyles(styles);
 
-export default function Information(props) {
+export default function Speaker(props) {
   const {name, object} = props
   const classes = useStyles();
   const infos = [
@@ -24,7 +24,7 @@ export default function Information(props) {
     [
       "Mark Hasegawa-Johns​on",
       "UIUC",
-      "https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcQB-xcGVCbeC36jf2HF8qKcpr01hrSaVgcUhQ&usqp=CAU",
+      "https://i.imgur.com/sioW5Os.png",
     ],
     [
       "Katrin Kirchhoff",
@@ -54,9 +54,27 @@ export default function Information(props) {
   ]
   return (
     <div className={classes.section}>
-      <h2 className={classes.title}>Schedule</h2>
-      <p style={{height: 20}}></p>
-      <CustomizedTables />
+      <h2 className={classes.title}>Invited Speakers</h2>
+      <GridContainer justify="center">
+        <GridItem xs={12} sm={12} md={8}>
+          <h4 className={classes.description} style={{textAlign: "center"}}>
+          Following is the list of invited speakers in alphabetical order:
+          </h4>  
+        </GridItem>
+        <GridItem xs={12} sm={12} md={8}>
+          <GridContainer>
+            {
+              infos.map(info =>
+              <GridItem xs={12} sm={12} md={4}>
+                <div style={{padding: 10}}>
+                <NameCard name={info[0]} org={info[1]} imgurl={info[2]} />
+                </div>
+              </GridItem>
+            )
+            }
+        </GridContainer>
+        </GridItem>
+      </GridContainer>
       <p style={{height: 30}}></p>
     </div>
   );

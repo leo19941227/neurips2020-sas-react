@@ -31,22 +31,13 @@ function createData(name, calories, fat, carbs, protein) {
 }
 
 const rows = [
-  createData('8:45 - 9:00', "Intro", "", "", ""),
-  createData('9:00 - 9:30', "Invited talk - session 1", "", "", ""),
-  createData('9:30 - 10:00', "Invited talk - session 2", "", "", ""),
-  createData('10:00 - 10:15', "Poster - lightning round", "", "", ""),
-  createData('10:15 - 11:00', "Virtual poster session", "", "", ""),,
-  createData('11:00 - 11:30', "Invited talk - 3", "", "", ""),
-  createData('11:30 - 12:30', "Contributed talk - session 1", "", "", ""),
-  createData('12:30 - 1:30', "Break", "", "", ""),
-  createData('1:30 - 2:00', "Invited talk - session 4", "", "", ""),
-  createData('2:00 - 2:30', "Invited talk - session 5", "", "", ""),
-  createData('2:30 - 3:30', "Contributed talk - session 2", "", "", ""),
-  createData('3:30 - 4:15', "Virtual poster session", "", "", ""),
-  createData('4:15 - 4:45', "Invited talk - session 6", "", "", ""),
-  createData('4:45 - 5:15', "Invited talk - session 7", "", "", ""),
-  createData('5:15 - 6:00', "Virtual Panel / open discussion", "", "", ""),
-  createData('6:00 - 6:05', "Closing remarks", "", "", ""),
+  createData('10:00', "Invited talk - session 1", "Bhuvana Ramabhadran", "TBD", ""),
+  createData('10:45', "Invited talk - session 2", "Mark Hasegawa-Johnson", "Multimodal Distant Supervision", ""),,
+  createData('12:45', "Invited talk - session 3", "Dong Yu", "Speech Processing with Weak Supervision", ""),
+  createData('14:45', "Invited talk - session 4", "Chelsea Finn", "Underfitting and Uncertainty in Self-Supervised Predictive Models", ""),
+  createData('15:30', "Invited talk - session 5", "Mirco Ravanelli", "Towards robust self-supervised learning of speech representations", ""),
+  createData('17:30', "Invited talk - session 6", "Katrin Kirchhoff", "TBD", ""),
+  createData('18:15', "Invited talk - session 7", "Luke Zettlemoyer", "De-noising Sequence-to-Sequence Pre-training", ""),
 ];
 
 const useStyles = makeStyles({

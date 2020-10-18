@@ -23,6 +23,7 @@ import CallSection from "./Sections/CallSection.js";
 import TeamSection from "./Sections/TeamSection.js";
 import Schedule from "./Sections/Schedule.js";
 import Information from "./Sections/Information.js"
+import Speaker from "./Sections/Speaker.js"
 
 const dashboardRoutes = [];
 
@@ -76,9 +77,9 @@ export default function LandingPage(props) {
           <span style={{display: "block", height: 50}} id="deadlines"></span>
           <Information title="Important Dates" descriptions={[<div style={{textAlign: "center"}}>
               <div style={{margin: "30px 0 5px 0"}}>
-                  <span style={{fontWeight: "bold", color: "red"}}>23:59 (Anywhere on Earth), Oct 12, 2020</span>
+                  <span style={{fontWeight: "bold", color: "red"}}><strike>23:59 (Anywhere on Earth), Oct 12, 2020</strike></span>
               </div>
-              <block style={{margin: "5px 0 30px 0"}}>Submission deadline</block>
+              <block style={{margin: "5px 0 30px 0"}}><strike>Submission deadline</strike></block>
               <div style={{margin: "30px 0 5px 0"}}>
                   <span style={{fontWeight: "bold", color: "red"}}>23:59 (Anywhere on Earth), Oct 27, 2020</span>
               </div>
@@ -88,8 +89,10 @@ export default function LandingPage(props) {
               <div style={{fontWeight: "bold", color: "red", margin: "30px 0 5px 0"}}>Dec 11, 2020</div>
               <block style={{margin: "5px 0 30px 0"}}>Date of workshop</block>
             </div>]} />
-          <Information title="Invited Speakers" descriptions={[<span style={{textAlign: "center"}}>To be decided</span>]} />
-          <Information title="Schedule" descriptions={[<span style={{textAlign: "center"}}>To be decided</span>]} />
+          {/* <Information title="Invited Speakers" descriptions={[<span style={{textAlign: "center"}}>To be decided</span>]} /> */}
+          {/* <Information title="Schedule" descriptions={[<span style={{textAlign: "center"}}>To be decided</span>]} /> */}
+          <Speaker />
+          <Schedule />
           <span style={{display: "block", height: 50}} id="organizers"></span>
           <TeamSection />
           <Information title="Program Committee" descriptions={[<span style={{textAlign: "center"}}>To be decided</span>]} />
