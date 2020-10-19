@@ -17,9 +17,9 @@ export default function Speaker(props) {
   const classes = useStyles();
   const infos = [
     [
-      "Chelsea Finn",
-      "Stanford",
-      "https://ai.stanford.edu/~cbfinn/_files/ChelseaFinn_hires.jpg",
+      "Bhuvana Ramabhadran",
+      "Google",
+      "https://sites.google.com/site/thebhuv/_/rsrc/1362193208294/home/bhuv.jpg",
     ],
     [
       "Mark Hasegawa-Johns​on",
@@ -27,14 +27,14 @@ export default function Speaker(props) {
       "https://i.imgur.com/sioW5Os.png",
     ],
     [
-      "Katrin Kirchhoff",
-      "Amazon",
-      "https://people.ece.uw.edu/kirchhoff_katrin/kirchhoff_katrin_2016_200x267.jpg",
+      "Dong Yu",
+      "Tencent",
+      "https://avatars2.githubusercontent.com/u/12472179?s=400&u=cf0fb84df402f954eb41947c0dd18f4038a762d7&v=4",
     ],
     [
-      "Bhuvana Ramabhadran",
-      "Google",
-      "https://sites.google.com/site/thebhuv/_/rsrc/1362193208294/home/bhuv.jpg",
+      "Chelsea Finn",
+      "Stanford",
+      "https://ai.stanford.edu/~cbfinn/_files/ChelseaFinn_hires.jpg",
     ],
     [
       "Mirco Ravanelli",
@@ -42,9 +42,9 @@ export default function Speaker(props) {
       "https://avatars0.githubusercontent.com/u/16886998?s=460&u=7da7303eb1fc1582c1ed51fba5fcc9e3e6115e3c&v=4",
     ],
     [
-      "Dong Yu",
-      "Tencent",
-      "https://avatars2.githubusercontent.com/u/12472179?s=400&u=cf0fb84df402f954eb41947c0dd18f4038a762d7&v=4",
+      "Katrin Kirchhoff",
+      "Amazon",
+      "https://people.ece.uw.edu/kirchhoff_katrin/kirchhoff_katrin_2016_200x267.jpg",
     ],
     [
       "Luke Zettlemoyer",

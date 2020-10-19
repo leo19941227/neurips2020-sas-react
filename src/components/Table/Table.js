@@ -31,13 +31,13 @@ function createData(name, calories, fat, carbs, protein) {
 }
 
 const rows = [
-  createData('10:00', "Invited talk - session 1", "Bhuvana Ramabhadran", "TBD", ""),
-  createData('10:45', "Invited talk - session 2", "Mark Hasegawa-Johnson", "Multimodal Distant Supervision", ""),,
-  createData('12:45', "Invited talk - session 3", "Dong Yu", "Speech Processing with Weak Supervision", ""),
-  createData('14:45', "Invited talk - session 4", "Chelsea Finn", "Underfitting and Uncertainty in Self-Supervised Predictive Models", ""),
-  createData('15:30', "Invited talk - session 5", "Mirco Ravanelli", "Towards robust self-supervised learning of speech representations", ""),
-  createData('17:30', "Invited talk - session 6", "Katrin Kirchhoff", "TBD", ""),
-  createData('18:15', "Invited talk - session 7", "Luke Zettlemoyer", "De-noising Sequence-to-Sequence Pre-training", ""),
+  createData('10:00-10:45', "Invited talk", "Bhuvana Ramabhadran", "TBD", ""),
+  createData('10:45-11:30', "Invited talk", "Mark Hasegawa-Johnson", "Multimodal Distant Supervision", ""),,
+  createData('12:45-13:30', "Invited talk", "Dong Yu", "Speech Processing with Weak Supervision", ""),
+  createData('14:45-15:30', "Invited talk", "Chelsea Finn", "Underfitting and Uncertainty in Self-Supervised Predictive Models", ""),
+  createData('15:30-16:15', "Invited talk", "Mirco Ravanelli", "Towards robust self-supervised learning of speech representations", ""),
+  createData('17:30-18:15', "Invited talk", "Katrin Kirchhoff", "TBD", ""),
+  createData('18:15-19:00', "Invited talk", "Luke Zettlemoyer", "De-noising Sequence-to-Sequence Pre-training", ""),
 ];
 
 const useStyles = makeStyles({
