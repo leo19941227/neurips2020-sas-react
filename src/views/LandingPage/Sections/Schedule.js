@@ -17,7 +17,7 @@ export default function Information(props) {
   return (
     <div className={classes.section}>
       <h2 className={classes.title}>Schedule</h2>
-      <p style={{height: 20}}></p>
+      <p style={{height: 10}}></p>
       <CustomizedTables />
       <p style={{height: 30}}></p>
     </div>

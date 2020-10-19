@@ -57,9 +57,9 @@ export default function Speaker(props) {
       <h2 className={classes.title}>Invited Speakers</h2>
       <GridContainer justify="center">
         <GridItem xs={12} sm={12} md={8}>
-          <h4 className={classes.description} style={{textAlign: "center"}}>
-          Following is the list of invited speakers in alphabetical order:
-          </h4>  
+          {/* <h4 className={classes.description} style={{textAlign: "center"}}>
+          Following is the list of invited speakers:
+          </h4>   */}
         </GridItem>
         <GridItem xs={12} sm={12} md={8}>
           <GridContainer>
