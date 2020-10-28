@@ -95,7 +95,52 @@ export default function LandingPage(props) {
           <Schedule />
           <span style={{display: "block", height: 50}} id="organizers"></span>
           <TeamSection />
-          <Information title="Program Committee" descriptions={[<span style={{textAlign: "center"}}>To be decided</span>]} />
+          <Information title="Program Committee" descriptions={[
+            <div style={{paddingLeft: 100}}>
+            <span style={{textAlign: "left"}}>
+              <ul>
+              {
+                [
+                  ['Jahangir Alam',	'Computer Research Institute of Montreal'],
+                  ['Mattia Di Gangi', 'Fondazione Bruno Kessler'],
+                  ['Annie	Dong', 'Amazon'],
+                  ['Benjamin Elizalde', 'Carnegie Mellon University'],
+                  ['Yusuke Fujita', 'Hitachi'],
+                  ['Paola Garcia', 'Johns Hopkins University'],
+                  ['David Harwath', 'The University of Texas at Austin'],
+                  ['Po-chun	Hsu', 'National Taiwan University'],
+                  ['Wei-Ning Hsu', 'Facebook'],
+                  ['Van hamme Hugo', 'KU Leuven'],
+                  ['Shigeki	Karita', 'Google'],
+                  ['Cheng-I	Lai', 'Massachusetts Institute of Technology'],
+                  ['Alex Lamb', 'Universite de Montreal'],
+                  ['Andy Liu', 'ASUS AICS'],
+                  ['Chunxi Liu', 'Facebook'],
+                  ['Yuzong Liu', 'Amazon'],
+                  ['Michael Mandel', 'Brooklyn College, CUNY'],
+                  ['Florian Metze', 'Carnegie Mellon University'],
+                  ['Lucas	Ondel', 'Brno University of Technology'],
+                  ['Andrew Rosenberg', 'Google'],
+                  ['George Saon', 'IBM'],
+                  ['Themos Stafylakis', 'Omilia - Conversational Intelligence'],
+                  ['Georg	Stemmer', 'Intel'],
+                  ['Cem	Subakan', 'MILA'],
+                  ['Hao	Tang', 'The University of Edinburgh'],
+                  ['Andros Tjandra', 'NAIST'],
+                  ['Weiran Wang', 'Salesforce Research'],
+                  ['Scott	Wisdom', 'Google'],
+                  ['Yuan-kuei	Wu', 'National Taiwan University'],
+                  ['Shu-Wen	Yang', 'National Taiwan University'],
+                  ['Ching-Feng Yeh', 'Facebook'],
+                  ['Yu Zhang', 'Google'],
+                ].map(info =>
+                  <li>
+                    <span><strong>{info[0]}</strong></span><span style={{marginLeft: 30}}>{info[1]}</span>
+                  </li>)
+              }
+              </ul>
+            </span>
+            </div>]} />
           <Information title="Accepted Papers" descriptions={[<span style={{textAlign: "center"}}>To be decided</span>]} />
           <span style={{display: "block", height: 50}} id="contact"></span>
           <Information title="Contact" descriptions={[<span style={{textAlign: "center"}}>neurips.sas.2020@gmail.com</span>]} />
