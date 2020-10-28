@@ -96,8 +96,7 @@ export default function LandingPage(props) {
           <span style={{display: "block", height: 50}} id="organizers"></span>
           <TeamSection />
           <Information title="Program Committee" descriptions={[
-            <div style={{paddingLeft: 100}}>
-            <span style={{textAlign: "left"}}>
+            <div style={{textAlign: "left", maxWidth: 500, margin: "auto"}}>
               <ul>
               {
                 [
@@ -135,11 +134,10 @@ export default function LandingPage(props) {
                   ['Yu Zhang', 'Google'],
                 ].map(info =>
                   <li>
-                    <span><strong>{info[0]}</strong></span><span style={{marginLeft: 30}}>{info[1]}</span>
+                    <span><strong>{info[0]}</strong></span><span style={{marginLeft: 15}}>{info[1]}</span>
                   </li>)
               }
               </ul>
-            </span>
             </div>]} />
           <Information title="Accepted Papers" descriptions={[<span style={{textAlign: "center"}}>To be decided</span>]} />
           <span style={{display: "block", height: 50}} id="contact"></span>
