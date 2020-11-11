@@ -26,18 +26,90 @@ const StyledTableRow = withStyles((theme) => ({
   },
 }))(TableRow);
 
-function createData(name, calories, fat, carbs, protein) {
-  return { name, calories, fat, carbs, protein };
+function createData(name, calories, fat, carbs) {
+  return { name, calories, fat, carbs };
+}
+
+function listofname(names) {
+  return <div style={{width: 170, overflowX: "auto"}}>
+    {
+      names.map(name => <p>{name}</p>)
+    }
+  </div>
+}
+
+function listoftitle(names) {
+  return <div style={{width: 720, overflowX: "auto"}}>
+    {
+      names.map(name => <p>{name}</p>)
+    }
+  </div>
 }
 
 const rows = [
-  createData('10:00-10:45', "Invited talk", "Bhuvana Ramabhadran", "TBD", ""),
-  createData('10:45-11:30', "Invited talk", "Mark Hasegawa-Johnson", "Multimodal Distant Supervision", ""),,
-  createData('12:45-13:30', "Invited talk", "Dong Yu", "Speech Processing with Weak Supervision", ""),
-  createData('14:45-15:30', "Invited talk", "Chelsea Finn", "Underfitting and Uncertainty in Self-Supervised Predictive Models", ""),
-  createData('15:30-16:15', "Invited talk", "Mirco Ravanelli", "Towards robust self-supervised learning of speech representations", ""),
-  createData('17:30-18:15', "Invited talk", "Katrin Kirchhoff", "TBD", ""),
-  createData('18:15-19:00', "Invited talk", "Luke Zettlemoyer", "De-noising Sequence-to-Sequence Pre-training", ""),
+  createData('09:50-10:00', "Introduction", "TBD", "Opening Remarks"),
+  createData('10:00-10:45', "Invited talk", "Bhuvana Ramabhadran", "TBD"),
+  createData('10:45-11:30', "Invited talk", "Mark Hasegawa-Johnson", "Multimodal Distant Supervision"),
+  createData('11:30-12:30', "Contributed talks (I)",
+              listofname([
+                "TBD",
+                "TBD",
+                "TBD",
+                "TBD",
+                "TBD",
+                "TBD"
+              ]),
+              listoftitle([
+                "Self-Supervised Learning using Contrastive Mixtures for Personalized Speech Enhancement",
+                "Self-supervised Pre-training Reduces Label Permutation Instability of Speech Separation",
+                "Augmentation adversarial training for self-supervised speaker recognition",
+                "Neural Composition: Learning to Generate from Multiple Models",
+                "Towards Semi-Supervised Semantics Understanding from Speech",
+                "The Zero Resource Speech Benchmark 2021. Metrics and baselines for unsupervised spoken language modeling"
+              ]),
+            ),
+  createData('12:30-12:45', "Q&A", "", "Q&A for Contributed talks (I)"),
+  createData('12:45-13:00', "Break", "", "Break"),
+  createData('13:00-13:45', "Invited talk", "Dong Yu", "Speech Processing with Weak Supervision"),
+  createData('13:45-14:25', "Contributed talks (II)",
+              listofname([
+                "TBD",
+                "TBD",
+                "TBD",
+                "TBD",
+              ]),
+              listoftitle([
+                "Towards Localisation of Keywords in Speech Using Weak Supervision",
+                "Text-Free Image-to-Speech Synthesis Using Learned Segmental Units",
+                "Self-Supervised Audio-Visual Separation of On-Screen Sounds from Unlabeled Videos",
+                "Multi-Format Contrastive Learning of Audio Representations",
+              ]),
+            ),
+  createData('14:25-14:40', "Q&A", "", "Q&A for Contributed talks (II)"),
+  createData('14:40-14:55', "Break", "", "Break"),
+  createData('14:55-15:40', "Invited talk", "Chelsea Finn", "Underfitting and Uncertainty in Self-Supervised Predictive Models"),
+  createData('15:40-16:25', "Invited talk", "Mirco Ravanelli", "Towards robust self-supervised learning of speech representations"),
+  createData('16:25-17:15', "Contributed talks (III)",
+              listofname([
+                "TBD",
+                "TBD",
+                "TBD",
+                "TBD",
+                "TBD",
+              ]),
+              listoftitle([
+                "Similarity Analysis of Self-Supervised Speech Representations",
+                "Representation Learning for Sequence Data with Deep Autoencoding Predictive Components",
+                "Pushing the Limits of Semi-Supervised Learning for Automatic Speech Recognition",
+                "A Correspondence Variational Autoencoder for Unsupervised Acoustic Word Embedding",
+                "HUBERT: How much can a bad teacher benefit ASR pre-training?",
+              ]),
+            ),
+  createData('17:15-17:30', "Q&A", "", "Q&A for Contributed talks (III)"),
+  createData('17:30-17:45', "Break", "", "Break"),
+  createData('17:45-18:30', "Invited talk", "Katrin Kirchhoff", "TBD"),
+  createData('18:30-19:15', "Invited talk", "Luke Zettlemoyer", "De-noising Sequence-to-Sequence Pre-training"),
+  createData('19:15-19:25', "Introduction", "TBD", "Closing Remark"),
 ];
 
 const useStyles = makeStyles({
@@ -56,21 +128,19 @@ export default function CustomizedTables() {
           <TableRow>
             <StyledTableCell>Time</StyledTableCell>
             <StyledTableCell align="left">Type</StyledTableCell>
-            <StyledTableCell align="left">Presenters</StyledTableCell>
             <StyledTableCell align="left">Title</StyledTableCell>
-            <StyledTableCell align="left">Note</StyledTableCell>
+            <StyledTableCell align="left">Presenters</StyledTableCell>
           </TableRow>
         </TableHead>
         <TableBody>
           {rows.map((row) => (
             <StyledTableRow key={row.name}>
-              <StyledTableCell component="th" scope="row">
-                {row.name}
+              <StyledTableCell align="left">
+                <p style={{width: 80, margin: "auto"}}>{row.name}</p>
               </StyledTableCell>
               <StyledTableCell align="left">{row.calories}</StyledTableCell>
-              <StyledTableCell align="left">{row.fat}</StyledTableCell>
               <StyledTableCell align="left">{row.carbs}</StyledTableCell>
-              <StyledTableCell align="left">{row.protein}</StyledTableCell>
+              <StyledTableCell align="left">{row.fat}</StyledTableCell>
             </StyledTableRow>
           ))}
         </TableBody>
