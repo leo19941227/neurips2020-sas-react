@@ -107,7 +107,7 @@ const rows = [
             ),
   createData('17:15-17:30', "Q&A", "", "Q&A for Contributed talks (III)"),
   createData('17:30-17:45', "Break", "", "Break"),
-  createData('17:45-18:30', "Invited talk", "Katrin Kirchhoff", "TBD"),
+  createData('17:45-18:30', "Invited talk", "Katrin Kirchhoff", "Flexible contextualized speech representation learning for diverse downstream tasks"),
   createData('18:30-19:15', "Invited talk", "Luke Zettlemoyer", "De-noising Sequence-to-Sequence Pre-training"),
   createData('19:15-19:25', "Introduction", "TBD", "Closing Remark"),
 ];
@@ -126,7 +126,7 @@ export default function CustomizedTables() {
       <Table className={classes.table} aria-label="customized table">
         <TableHead>
           <TableRow>
-            <StyledTableCell>Time</StyledTableCell>
+            <StyledTableCell>Time (EST)</StyledTableCell>
             <StyledTableCell align="left">Type</StyledTableCell>
             <StyledTableCell align="left">Title</StyledTableCell>
             <StyledTableCell align="left">Presenters</StyledTableCell>
