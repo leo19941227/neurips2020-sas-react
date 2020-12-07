@@ -47,17 +47,17 @@ function listoftitle(names) {
 }
 
 const rows = [
-  createData('09:50-10:00', "Introduction", "TBD", "Opening Remarks"),
+  createData('09:50-10:00', "Introduction", "Hung-yi Lee", "Opening Remarks"),
   createData('10:00-10:45', "Invited talk", "Bhuvana Ramabhadran", "TBD"),
   createData('10:45-11:30', "Invited talk", "Mark Hasegawa-Johnson", "Multimodal Distant Supervision"),
   createData('11:30-12:30', "Contributed talks (I)",
               listofname([
-                "TBD",
-                "TBD",
-                "TBD",
-                "TBD",
-                "TBD",
-                "TBD"
+                "Aswin Sivaraman",
+                "Sung-Feng Huang",
+                "Jaesung Huh",
+                "Denis Filimonov",
+                "Cheng-I Lai",
+                "Tu Anh Nguyen"
               ]),
               listoftitle([
                 "Self-Supervised Learning using Contrastive Mixtures for Personalized Speech Enhancement",
@@ -73,10 +73,10 @@ const rows = [
   createData('13:00-13:45', "Invited talk", "Dong Yu", "Speech Processing with Weak Supervision"),
   createData('13:45-14:25', "Contributed talks (II)",
               listofname([
-                "TBD",
-                "TBD",
-                "TBD",
-                "TBD",
+                "Kayode Olaleye",
+                "Wei-Ning Hsu",
+                "Efthymios Tzinis",
+                "Aaron van den Oord",
               ]),
               listoftitle([
                 "Towards Localisation of Keywords in Speech Using Weak Supervision",
@@ -91,11 +91,11 @@ const rows = [
   createData('15:40-16:25', "Invited talk", "Mirco Ravanelli", "Towards robust self-supervised learning of speech representations"),
   createData('16:25-17:15', "Contributed talks (III)",
               listofname([
-                "TBD",
-                "TBD",
-                "TBD",
-                "TBD",
-                "TBD",
+                "Yu-An Chung",
+                "Junwen Bai",
+                "Daniel S Park",
+                "Puyuan Peng",
+                "Wei-Ning Hsu",
               ]),
               listoftitle([
                 "Similarity Analysis of Self-Supervised Speech Representations",
@@ -109,7 +109,7 @@ const rows = [
   createData('17:30-17:45', "Break", "", "Break"),
   createData('17:45-18:30', "Invited talk", "Katrin Kirchhoff", "Flexible contextualized speech representation learning for diverse downstream tasks"),
   createData('18:30-19:15', "Invited talk", "Luke Zettlemoyer", "De-noising Sequence-to-Sequence Pre-training"),
-  createData('19:15-19:25', "Introduction", "TBD", "Closing Remark"),
+  createData('19:15-19:25', "Introduction", "Abdelrahman Mohamed", "Closing Remark"),
 ];
 
 const useStyles = makeStyles({

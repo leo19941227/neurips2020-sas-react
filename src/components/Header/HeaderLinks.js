@@ -57,12 +57,32 @@ export default function HeaderLinks(props) {
         </Link>
       </ListItem>
       <ListItem className={classes.listItem}>
+        <Link to="/#schedule" style={{color: "inherit"}}>
+        <Button
+          color="transparent"
+          className={classes.navLink}
+        >
+        Schedule
+        </Button>
+        </Link>
+      </ListItem>
+      <ListItem className={classes.listItem}>
         <Link to="/#organizers" style={{color: "inherit"}}>
         <Button
           color="transparent"
           className={classes.navLink}
         >
         Organizers
+        </Button>
+        </Link>
+      </ListItem>
+      <ListItem className={classes.listItem}>
+        <Link to="/#papers" style={{color: "inherit"}}>
+        <Button
+          color="transparent"
+          className={classes.navLink}
+        >
+        Accepted Papers
         </Button>
         </Link>
       </ListItem>
