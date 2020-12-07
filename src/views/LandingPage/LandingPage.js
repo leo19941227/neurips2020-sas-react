@@ -73,7 +73,6 @@ export default function LandingPage(props) {
           <SummarySection />
           <span style={{display: "block", height: 50}} id="call"></span>
           <CallSection />
-          <Information title="Submission Guidelines" descriptions={[<span style={{textAlign: "center"}}>To be decided</span>]} />
           <span style={{display: "block", height: 50}} id="deadlines"></span>
           <Information title="Important Dates" descriptions={[<div style={{textAlign: "center"}}>
               <div style={{margin: "30px 0 5px 0"}}>
@@ -91,55 +90,12 @@ export default function LandingPage(props) {
             </div>]} />
           {/* <Information title="Invited Speakers" descriptions={[<span style={{textAlign: "center"}}>To be decided</span>]} /> */}
           {/* <Information title="Schedule" descriptions={[<span style={{textAlign: "center"}}>To be decided</span>]} /> */}
+          <span style={{display: "block", height: 50}} id="speakers"></span>
           <Speaker />
           <span style={{display: "block", height: 50}} id="schedule"></span>
           <Schedule />
           <span style={{display: "block", height: 50}} id="organizers"></span>
           <TeamSection />
-          <Information title="Program Committee" descriptions={[
-            <div style={{textAlign: "left", maxWidth: 500, margin: "auto"}}>
-              <ul>
-              {
-                [
-                  ['Jahangir Alam',	'Computer Research Institute of Montreal'],
-                  ['Mattia Di Gangi', 'Fondazione Bruno Kessler'],
-                  ['Annie	Dong', 'Amazon'],
-                  ['Benjamin Elizalde', 'Carnegie Mellon University'],
-                  ['Yusuke Fujita', 'Hitachi'],
-                  ['Paola Garcia', 'Johns Hopkins University'],
-                  ['David Harwath', 'The University of Texas at Austin'],
-                  ['Po-chun	Hsu', 'National Taiwan University'],
-                  ['Wei-Ning Hsu', 'Facebook'],
-                  ['Van hamme Hugo', 'KU Leuven'],
-                  ['Shigeki	Karita', 'Google'],
-                  ['Cheng-I	Lai', 'Massachusetts Institute of Technology'],
-                  ['Alex Lamb', 'Universite de Montreal'],
-                  ['Andy Liu', 'ASUS AICS'],
-                  ['Chunxi Liu', 'Facebook'],
-                  ['Yuzong Liu', 'Amazon'],
-                  ['Michael Mandel', 'Brooklyn College, CUNY'],
-                  ['Florian Metze', 'Carnegie Mellon University'],
-                  ['Lucas	Ondel', 'Brno University of Technology'],
-                  ['Andrew Rosenberg', 'Google'],
-                  ['George Saon', 'IBM'],
-                  ['Themos Stafylakis', 'Omilia - Conversational Intelligence'],
-                  ['Georg	Stemmer', 'Intel'],
-                  ['Cem	Subakan', 'MILA'],
-                  ['Hao	Tang', 'The University of Edinburgh'],
-                  ['Andros Tjandra', 'NAIST'],
-                  ['Weiran Wang', 'Salesforce Research'],
-                  ['Scott	Wisdom', 'Google'],
-                  ['Yuan-kuei	Wu', 'National Taiwan University'],
-                  ['Shu-Wen	Yang', 'National Taiwan University'],
-                  ['Ching-Feng Yeh', 'Facebook'],
-                  ['Yu Zhang', 'Google'],
-                ].map(info =>
-                  <li>
-                    <span><strong>{info[0]}</strong></span><span style={{marginLeft: 15}}>{info[1]}</span>
-                  </li>)
-              }
-              </ul>
-            </div>]} />
           <span style={{display: "block", height: 50}} id="papers"></span>
           <Information title="Accepted Papers" descriptions={[<div style={{textAlign: "center"}}>
             {
@@ -230,6 +186,52 @@ export default function LandingPage(props) {
                 )
             }
           </div>]} />
+          <span style={{display: "block", height: 50}} id="committee"></span>
+          <Information title="Program Committee" descriptions={[
+            <div style={{textAlign: "center"}}>
+              {
+                [
+                  ['Jahangir Alam',	'Computer Research Institute of Montreal'],
+                  ['Mattia Di Gangi', 'Fondazione Bruno Kessler'],
+                  ['Annie	Dong', 'Amazon'],
+                  ['Benjamin Elizalde', 'Carnegie Mellon University'],
+                  ['Yusuke Fujita', 'Hitachi'],
+                  ['Paola Garcia', 'Johns Hopkins University'],
+                  ['David Harwath', 'The University of Texas at Austin'],
+                  ['Po-chun	Hsu', 'National Taiwan University'],
+                  ['Wei-Ning Hsu', 'Facebook'],
+                  ['Van hamme Hugo', 'KU Leuven'],
+                  ['Shigeki	Karita', 'Google'],
+                  ['Cheng-I	Lai', 'Massachusetts Institute of Technology'],
+                  ['Alex Lamb', 'Universite de Montreal'],
+                  ['Andy Liu', 'ASUS AICS'],
+                  ['Chunxi Liu', 'Facebook'],
+                  ['Yuzong Liu', 'Amazon'],
+                  ['Michael Mandel', 'Brooklyn College, CUNY'],
+                  ['Florian Metze', 'Carnegie Mellon University'],
+                  ['Lucas	Ondel', 'Brno University of Technology'],
+                  ['Andrew Rosenberg', 'Google'],
+                  ['George Saon', 'IBM'],
+                  ['Themos Stafylakis', 'Omilia - Conversational Intelligence'],
+                  ['Georg	Stemmer', 'Intel'],
+                  ['Cem	Subakan', 'MILA'],
+                  ['Hao	Tang', 'The University of Edinburgh'],
+                  ['Andros Tjandra', 'NAIST'],
+                  ['Weiran Wang', 'Salesforce Research'],
+                  ['Scott	Wisdom', 'Google'],
+                  ['Yuan-kuei	Wu', 'National Taiwan University'],
+                  ['Shu-Wen	Yang', 'National Taiwan University'],
+                  ['Ching-Feng Yeh', 'Facebook'],
+                  ['Yu Zhang', 'Google'],
+                ].map(info =>
+                <div>
+                  <div style={{margin: "30px 0 5px 0"}}>
+                    <span style={{fontWeight: "bold"}}>{info[0]}</span>
+                  </div>
+                    <block style={{margin: "5px 0 30px 0"}}>{info[1]}</block>
+                </div>
+              )}
+            </div>]} />
           <span style={{display: "block", height: 50}} id="contact"></span>
           <Information title="Contact" descriptions={[<span style={{textAlign: "center"}}>neurips.sas.2020@gmail.com</span>]} />
           <p style={{height: 50}}></p>
