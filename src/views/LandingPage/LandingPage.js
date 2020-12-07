@@ -57,11 +57,11 @@ export default function LandingPage(props) {
               <Button
                 color="danger"
                 size="lg"
-                href="https://cmt3.research.microsoft.com/SAS2020/Submission/index"
+                href="https://neurips.cc/virtual/2020/protected/workshop_16153.html"
                 target="_blank"
                 rel="noopener noreferrer"
               >
-                Submit papers
+                LINK TO VIRTUAL WORKSHOP
               </Button>
             </GridItem>
           </GridContainer>
