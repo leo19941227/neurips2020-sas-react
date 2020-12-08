@@ -93,7 +93,7 @@ const rows = [
               listofname([
                 "Yu-An Chung",
                 "Junwen Bai",
-                "Daniel S Park",
+                "Yu Zhang",
                 "Puyuan Peng",
                 "Wei-Ning Hsu",
               ]),
