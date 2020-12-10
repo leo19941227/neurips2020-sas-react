@@ -48,7 +48,7 @@ function listoftitle(names) {
 
 const rows = [
   createData('09:50-10:00', "Introduction", "Hung-yi Lee", "Opening Remarks"),
-  createData('10:00-10:45', "Invited talk", "Bhuvana Ramabhadran", "TBD"),
+  createData('10:00-10:45', "Invited talk", "Bhuvana Ramabhadran", "A Broad Perspective into Self Supervised Learning for Speech Recognition"),
   createData('10:45-11:30', "Invited talk", "Mark Hasegawa-Johnson", "Multimodal Distant Supervision"),
   createData('11:30-12:30', "Contributed talks (I)",
               listofname([
