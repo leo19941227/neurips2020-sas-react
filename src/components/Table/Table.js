@@ -49,7 +49,7 @@ function listoftitle(names) {
 const rows = [
   createData('09:50-10:00', "Introduction", "Hung-yi Lee", "Opening Remarks"),
   createData('10:00-10:45', "Invited talk", "Bhuvana Ramabhadran", "A Broad Perspective into Self Supervised Learning for Speech Recognition"),
-  createData('10:45-11:30', "Invited talk", "Mark Hasegawa-Johnson", "Multimodal Distant Supervision"),
+  createData('10:45-11:30', "Invited talk", "Mark Hasegawa-Johnson", <span>Multimodal Distant Supervision <a target="_blank" href="https://drive.google.com/file/d/11vwXy2Iit0jGbNo1OY1Rn3fJhA6gq677/view?usp=sharing">(pdf)</a></span>),
   createData('11:30-12:30', "Contributed talks (I)",
               listofname([
                 "Aswin Sivaraman",
@@ -70,7 +70,7 @@ const rows = [
             ),
   createData('12:30-12:45', "Q&A", "", "Q&A for Contributed talks (I)"),
   createData('12:45-13:00', "Break", "", "Break"),
-  createData('13:00-13:45', "Invited talk", "Dong Yu", "Speech Processing with Weak Supervision"),
+  createData('13:00-13:45', "Invited talk", "Dong Yu", <span>Speech Processing with Weak Supervision <a target="_blank" href="https://drive.google.com/file/d/1lc8doXCVQBUYVWrDwFTGNbdJMhPUFeqJ/view?usp=sharing">(pdf)</a></span>),
   createData('13:45-14:25', "Contributed talks (II)",
               listofname([
                 "Kayode Olaleye",
@@ -87,8 +87,8 @@ const rows = [
             ),
   createData('14:25-14:40', "Q&A", "", "Q&A for Contributed talks (II)"),
   createData('14:40-14:55', "Break", "", "Break"),
-  createData('14:55-15:40', "Invited talk", "Chelsea Finn", "Underfitting and Uncertainty in Self-Supervised Predictive Models"),
-  createData('15:40-16:25', "Invited talk", "Mirco Ravanelli", "Towards robust self-supervised learning of speech representations"),
+  createData('14:55-15:40', "Invited talk", "Chelsea Finn", <span>Underfitting and Uncertainty in Self-Supervised Predictive Models <a target="_blank" href="https://drive.google.com/file/d/17JFbu_tcsdDrN8Mmi7WyEXz0UK-5e13W/view?usp=sharing">(pdf)</a></span>),
+  createData('15:40-16:25', "Invited talk", "Mirco Ravanelli", <span>Towards robust self-supervised learning of speech representations <a target="_blank" href="https://drive.google.com/file/d/1Nf_tUHfdAT1KuVWwHzlNzEu0iPCU0BL5/view?usp=sharing">(pdf)</a></span>),
   createData('16:25-17:15', "Contributed talks (III)",
               listofname([
                 "Yu-An Chung",
@@ -108,7 +108,7 @@ const rows = [
   createData('17:15-17:30', "Q&A", "", "Q&A for Contributed talks (III)"),
   createData('17:30-17:45', "Break", "", "Break"),
   createData('17:45-18:30', "Invited talk", "Katrin Kirchhoff", "Flexible contextualized speech representation learning for diverse downstream tasks"),
-  createData('18:30-19:15', "Invited talk", "Luke Zettlemoyer", "De-noising Sequence-to-Sequence Pre-training"),
+  createData('18:30-19:15', "Invited talk", "Luke Zettlemoyer", <span>De-noising Sequence-to-Sequence Pre-training <a target="_blank" href="https://drive.google.com/file/d/1PnUa-tobXZ2zqyqq_sqbqRM-UNDYrtcs/view?usp=sharing">(pdf)</a></span>),
   createData('19:15-19:25', "Introduction", "Abdelrahman Mohamed", "Closing Remark"),
 ];
 
